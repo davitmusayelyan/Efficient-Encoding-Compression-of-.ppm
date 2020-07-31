@@ -15,7 +15,7 @@ When converting from a ppm file to a p152 file, the user has the option of using
 
 If the user wants the image to be saved with only 10 colors, the program starts off by assigning 10 different colors to the color table defining 10 clusters. Then, each pixel on the image is assigned to the color (cluster) in the color table that it is closest to, after which the mean of the cluster is recalculated and that color-table color is updated. The process ends when there is no more improvement in the chosen colors in the color table. 
 
-The picture on the left is a ppm image which has been converted to a p152 file format with run-length encoding and a color-table with 20 colors. The picture on the right is the color-table compressed version of th same image. 
+The picture on the left is a ppm image which has been converted to a p152 file format with run-length encoding and a color-table with 20 colors. The picture on the right is the color-table compressed version of th same image. The P152 format of this image is **65%** smaller in its size than the .ppm file due to the compression.
 
 
 ![PPM vs Compressed](https://user-images.githubusercontent.com/52777539/89043008-ea514980-d358-11ea-96e9-1b74df2993ff.png)
